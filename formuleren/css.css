@@ -1,0 +1,16 @@
+.welbevinden label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  text-align: center;
+}
+.welbevinden label input {
+  display: block;
+  cursor: pointer;
+}
+input {
+  cursor: pointer;
+}
+label {
+  cursor: pointer;
+}
