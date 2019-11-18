@@ -17,7 +17,7 @@
       eerst een paar varagen voor jezelf moeten beantoorden. Dit formulier helpt
       jou daar bij.
     </p>
-    
+    <form action="http://bla.hosts.ma-cloud.nl/pop.php">
     <label for="fname">Name:</label>
     <input type="text" name="thename" placeholder="Bv. Jan Jansen" />
 
@@ -106,8 +106,10 @@
 
       <P>Wat zijn jouw plannen voor de toekomst?</P>
       <textarea name="plannen" placeholder="Voeg hier nog extra info bij!"></textarea>
-      <input type="submit" value="Submit Form" />
+      <input type="submit"/>
 
+    </form>
+    
       <div id="validatie">
           <a href="http://validator.w3.org/check?uri=referer" target="_blank">
             <img
@@ -128,86 +130,3 @@
   </body>
 </html>
 
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Teun van der Ploeg" />
-    <link rel="stylesheet" type="text/css" href="css.css" />
-  </head>
-  <body>
-    <h1>Mijn formulier</h1>
-    <form>
-      <h3>Wat is je naam?</h3>
-      <input type="text" name="thename" />
-      <h3>Welke klas heb je?</h3>
-      <div name="klas">
-        <select name="klas">
-          <option value="MG1A">MG1A</option>
-          <option value="MG1B">MG1B</option>
-          <option value="MG1C">MG1C</option>
-          <option value="MG1D">MG1D</option>
-        </select>
-      </div>
-      <h3>Welk cijfer geef jij de oplijding?</h3>
-      <div name="nummer1-10">
-        <select name="nummer">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </select>
-      </div>
-      <h3>Wat zijn jou sterke kanten?</h3>
-      <textarea name="skills"></textarea>
-      <h3>Aan welke skills moet je nog werken?</h3>
-      <textarea name="skills"></textarea>
-
-      <input type="submit" value="Submit Form" />
-    </form>
-  </body>
-  <script src="javascript.js"></script>
-</html> -->
-
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>formulier</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="UTF-8" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="Teun van der Ploeg" />
-    <link rel="stylesheet" type="text/css" href="css.css" />
-  </head>
-
-  <body>
-    <form>
-      Name <input type="text" name="custname" />
-      <br />
-      City <input type="text" name="city" value="Amsterdam" />
-      <br />
-      E-mail * <input type="email" name="email" />
-      <br />
-
-      Where did you hear about us?
-      <select name="hearAboutUs">
-        <option value="Internet">Internet</option>
-        <option value="Television">TV</option>
-        <option value="Magazine" selected>Magazine</option>
-      </select>
-      <br />
-      <input type="submit" value="Submit Form" />
-    </form>
-  </body>
-</html>
