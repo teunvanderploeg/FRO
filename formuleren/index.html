@@ -16,198 +16,202 @@
       eerst een paar varagen voor jezelf moeten beantoorden. Dit formulier helpt
       jou daar bij.
     </p>
+    <form action="http://bla.hosts.ma-cloud.nl/pop.php">
+      <label>Name:</label>
+      <input
+        autofocus
+        required
+        type="text"
+        name="naam"
+        placeholder="Bv. Jan Jansen"
+      />
 
-    <label>Name:</label>
-    <input
-      autofocus
-      required
-      type="text"
-      name="thename"
-      placeholder="Bv. Jan Jansen"
-    />
+      <select name="klas">
+        <option value="">selecteer jouw klas</option>
+        <option value="MG1A">MG1A</option>
+        <option value="MG1B">MG1B</option>
+        <option value="MG1C">MG1C</option>
+        <option value="MG1D">MG1D</option>
+      </select>
+      <fieldset>
+        <legend>welbevinden</legend>
+        <div class="welbevinden">
+          <p>Hoe positief ben je op dit moment over je opleiding?</p>
 
-    <select name="klas">
-      <option value="">selecteer jouw klas</option>
-      <option value="MG1A">MG1A</option>
-      <option value="MG1B">MG1B</option>
-      <option value="MG1C">MG1C</option>
-      <option value="MG1D">MG1D</option>
-    </select>
-    <fieldset>
-      <legend>welbevinden</legend>
-      <div class="welbevinden">
-        <p>Hoe positief ben je op dit moment over je opleiding?</p>
+          <label
+            ><input
+              type="radio"
+              name="subject"
+              value="0"
+              checked="checked"
+            />0</label
+          >
+          <label><input type="radio" name="positief" value="1" />1</label>
+          <label><input type="radio" name="positief" value="2" />2</label>
+          <label><input type="radio" name="positief" value="3" />3</label>
+          <label><input type="radio" name="positief" value="4" />4</label>
+          <label><input type="radio" name="positief" value="5" />5</label>
+          <label><input type="radio" name="positief" value="6" />6</label>
+          <label><input type="radio" name="positief" value="7" />7</label>
+          <label><input type="radio" name="positief" value="8" />8</label>
+          <label><input type="radio" name="positief" value="9" />9</label>
+          <label><input type="radio" name="positief" value="10" />10</label>
 
+          <p>Hoe gemotiveerd ben je momenteel om de opleiding af te maken?</p>
+
+          <label
+            ><input
+              type="radio"
+              name="subject1"
+              value="0"
+              checked="checked"
+            />0</label
+          >
+          <label><input type="radio" name="gemotiveerd" value="1" />1</label>
+          <label><input type="radio" name="gemotiveerd" value="2" />2</label>
+          <label><input type="radio" name="gemotiveerd" value="3" />3</label>
+          <label><input type="radio" name="gemotiveerd" value="4" />4</label>
+          <label><input type="radio" name="gemotiveerd" value="5" />5</label>
+          <label><input type="radio" name="gemotiveerd" value="6" />6</label>
+          <label><input type="radio" name="gemotiveerd" value="7" />7</label>
+          <label><input type="radio" name="gemotiveerd" value="8" />8</label>
+          <label><input type="radio" name="gemotiveerd" value="9" />9</label>
+          <label><input type="radio" name="gemotiveerd" value="10" />10</label>
+
+          <p>Hoeveel vertrouwen heb je momenteel in je eigen kunnen?</p>
+
+          <label
+            ><input
+              type="radio"
+              name="subject2"
+              value="0"
+              checked="checked"
+            />0</label
+          >
+          <label><input type="radio" name="vertrouwen" value="1" />1</label>
+          <label><input type="radio" name="vertrouwen" value="2" />2</label>
+          <label><input type="radio" name="vertrouwen" value="3" />3</label>
+          <label><input type="radio" name="vertrouwen" value="4" />4</label>
+          <label><input type="radio" name="vertrouwen" value="5" />5</label>
+          <label><input type="radio" name="vertrouwen" value="6" />6</label>
+          <label><input type="radio" name="vertrouwen" value="7" />7</label>
+          <label><input type="radio" name="vertrouwen" value="8" />8</label>
+          <label><input type="radio" name="vertrouwen" value="9" />9</label>
+          <label><input type="radio" name="vertrouwen" value="10" />10</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>sterke kanten</legend>
+        <p>wat zijn jou sterke kanten?</p>
+        <label
+          ><input type="checkbox" name="sterk_HTMLCSS" id="HTMLCSS" />Coderen in
+          HTML/CSS</label
+        >
+        <label
+          ><input type="checkbox" name="sterk_Java" id="Java" />Programmeren in
+          Java</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="sterk_javascript"
+            id="javascript"
+          />Scripting: programmeren in javascript</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="sterk_planning"
+            id="planning"
+          />planning</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="sterk_samenwerken"
+            id="samenwerken"
+          />samenwerken</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Nog ontwikkelen</legend>
+        <p>Aan welke skills moet je nog extra aandacht besteden?</p>
+        <label
+          ><input
+            type="checkbox"
+            name="ontwikkelen_HTMLCSS"
+            id="ontwikkelen_HTMLCSS"
+          />Coderen in HTML/CSS</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="ontwikkelen_Java"
+            id="ontwikkelen_Java"
+          />Programmeren in Java</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="ontwikkelen_javascript"
+            id="ontwikkelen_javascript"
+          />Scripting: programmeren in javascript</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="ontwikkelen_planning"
+            id="ontwikkelen_planning"
+          />planning</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="ontwikkelen_samenwerken"
+            id="ontwikkelen_samenwerken"
+          />samenwerken</label
+        >
+      </fieldset>
+
+      <fieldset>
+        <legend>Beste programmertaal</legend>
+        <p>Aan welke skills moet je nog extra aandacht besteden?</p>
         <label
           ><input
             type="radio"
-            name="subject"
-            value="0"
+            name="beste"
+            id="beste_HTML"
             checked="checked"
-          />0</label
+          />HTML</label
         >
-        <label><input type="radio" name="subject" value="1" />1</label>
-        <label><input type="radio" name="subject" value="2" />2</label>
-        <label><input type="radio" name="subject" value="3" />3</label>
-        <label><input type="radio" name="subject" value="4" />4</label>
-        <label><input type="radio" name="subject" value="5" />5</label>
-        <label><input type="radio" name="subject" value="6" />6</label>
-        <label><input type="radio" name="subject" value="7" />7</label>
-        <label><input type="radio" name="subject" value="8" />8</label>
-        <label><input type="radio" name="subject" value="9" />9</label>
-        <label><input type="radio" name="subject" value="10" />10</label>
-
-        <p>Hoe gemotiveerd ben je momenteel om de opleiding af te maken?</p>
-
+        <label><input type="radio" name="beste" id="beste_Java" />Java</label>
         <label
           ><input
             type="radio"
-            name="subject1"
-            value="0"
-            checked="checked"
-          />0</label
+            name="beste"
+            id="jbeste_avascript"
+          />javascript</label
         >
-        <label><input type="radio" name="subject1" value="1" />1</label>
-        <label><input type="radio" name="subject1" value="2" />2</label>
-        <label><input type="radio" name="subject1" value="3" />3</label>
-        <label><input type="radio" name="subject1" value="4" />4</label>
-        <label><input type="radio" name="subject1" value="5" />5</label>
-        <label><input type="radio" name="subject1" value="6" />6</label>
-        <label><input type="radio" name="subject1" value="7" />7</label>
-        <label><input type="radio" name="subject1" value="8" />8</label>
-        <label><input type="radio" name="subject1" value="9" />9</label>
-        <label><input type="radio" name="subject1" value="10" />10</label>
-
-        <p>Hoeveel vertrouwen heb je momenteel in je eigen kunnen?</p>
-
+        <label><input type="radio" name="beste" id="beste_planning" />C#</label>
         <label
           ><input
             type="radio"
-            name="subject2"
-            value="0"
-            checked="checked"
-          />0</label
+            name="beste"
+            id="beste_samenwerken"
+          />python</label
         >
-        <label><input type="radio" name="subject2" value="1" />1</label>
-        <label><input type="radio" name="subject2" value="2" />2</label>
-        <label><input type="radio" name="subject2" value="3" />3</label>
-        <label><input type="radio" name="subject2" value="4" />4</label>
-        <label><input type="radio" name="subject2" value="5" />5</label>
-        <label><input type="radio" name="subject2" value="6" />6</label>
-        <label><input type="radio" name="subject2" value="7" />7</label>
-        <label><input type="radio" name="subject2" value="8" />8</label>
-        <label><input type="radio" name="subject2" value="9" />9</label>
-        <label><input type="radio" name="subject2" value="10" />10</label>
-      </div>
-    </fieldset>
+      </fieldset>
 
-    <fieldset>
-      <legend>sterke kanten</legend>
-      <p>wat zijn jou sterke kanten?</p>
-      <label
-        ><input type="checkbox" name="sterk_HTMLCSS" id="HTMLCSS" />Coderen in
-        HTML/CSS</label
-      >
-      <label
-        ><input type="checkbox" name="sterk_Java" id="Java" />Programmeren in
-        Java</label
-      >
-      <label
-        ><input
-          type="checkbox"
-          name="sterk_javascript"
-          id="javascript"
-        />Scripting: programmeren in javascript</label
-      >
-      <label
-        ><input
-          type="checkbox"
-          name="sterk_planning"
-          id="planning"
-        />planning</label
-      >
-      <label
-        ><input
-          type="checkbox"
-          name="sterk_samenwerken"
-          id="samenwerken"
-        />samenwerken</label
-      >
-    </fieldset>
-
-    <fieldset>
-      <legend>Nog ontwikkelen</legend>
-      <p>Aan welke skills moet je nog extra aandacht besteden?</p>
-      <label
-        ><input
-          type="checkbox"
-          name="ontwikkelen_HTMLCSS"
-          id="ontwikkelen_HTMLCSS"
-        />Coderen in HTML/CSS</label
-      >
-      <label
-        ><input
-          type="checkbox"
-          name="ontwikkelen_Java"
-          id="ontwikkelen_Java"
-        />Programmeren in Java</label
-      >
-      <label
-        ><input
-          type="checkbox"
-          name="ontwikkelen_javascript"
-          id="ontwikkelen_javascript"
-        />Scripting: programmeren in javascript</label
-      >
-      <label
-        ><input
-          type="checkbox"
-          name="ontwikkelen_planning"
-          id="ontwikkelen_planning"
-        />planning</label
-      >
-      <label
-        ><input
-          type="checkbox"
-          name="ontwikkelen_samenwerken"
-          id="ontwikkelen_samenwerken"
-        />samenwerken</label
-      >
-    </fieldset>
-
-    <fieldset>
-      <legend>Beste programmertaal</legend>
-      <p>Aan welke skills moet je nog extra aandacht besteden?</p>
-      <label
-        ><input
-          type="radio"
-          name="beste"
-          id="beste_HTML"
-          checked="checked"
-        />HTML</label
-      >
-      <label><input type="radio" name="beste" id="beste_Java" />Java</label>
-      <label
-        ><input
-          type="radio"
-          name="beste"
-          id="jbeste_avascript"
-        />javascript</label
-      >
-      <label><input type="radio" name="beste" id="beste_planning" />C#</label>
-      <label
-        ><input type="radio" name="beste" id="beste_samenwerken" />python</label
-      >
-    </fieldset>
-
-    <p>Wat zijn jouw plannen voor de toekomst?</p>
-    <textarea
-      required
-      name="plannen"
-      placeholder="Voeg hier nog extra info bij!"
-    ></textarea>
-    <input type="submit" value="Submit Form" />
-
+      <p>Wat zijn jouw plannen voor de toekomst?</p>
+      <textarea
+        required
+        name="plannen"
+        placeholder="Voeg hier nog extra info bij!"
+      ></textarea>
+      <input type="submit" value="Submit Form" />
+    </form>
     <div id="validatie">
       <a href="http://validator.w3.org/check?uri=referer" target="_blank">
         <img
