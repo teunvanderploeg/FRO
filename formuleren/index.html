@@ -20,7 +20,7 @@
       <label>Name:</label>
       <input required type="text" name="naam" placeholder="Bv. Jan Jansen" />
 
-      <select name="klas">
+      <select required name="klas">
         <option value="">selecteer jouw klas</option>
         <option value="MG1A">MG1A</option>
         <option value="MG1B">MG1B</option>
@@ -32,7 +32,14 @@
         <div class="welbevinden">
           <p>Hoe positief ben je op dit moment over je opleiding?</p>
 
-          <label><input type="radio" name="positief" value="1" />1</label>
+          <label
+            ><input
+              checked="checked"
+              type="radio"
+              name="positief"
+              value="1"
+            />1</label
+          >
           <label><input type="radio" name="positief" value="2" />2</label>
           <label><input type="radio" name="positief" value="3" />3</label>
           <label><input type="radio" name="positief" value="4" />4</label>
@@ -45,7 +52,14 @@
 
           <p>Hoe gemotiveerd ben je momenteel om de opleiding af te maken?</p>
 
-          <label><input type="radio" name="gemotiveerd" value="1" />1</label>
+          <label
+            ><input
+              checked="checked"
+              type="radio"
+              name="gemotiveerd"
+              value="1"
+            />1</label
+          >
           <label><input type="radio" name="gemotiveerd" value="2" />2</label>
           <label><input type="radio" name="gemotiveerd" value="3" />3</label>
           <label><input type="radio" name="gemotiveerd" value="4" />4</label>
@@ -60,7 +74,7 @@
 
           <label
             ><input
-              autofocus
+              checked="checked"
               type="radio"
               name="vertrouwen"
               value="1"
