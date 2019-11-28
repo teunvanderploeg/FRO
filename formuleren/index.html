@@ -18,13 +18,7 @@
     </p>
     <form action="http://bla.hosts.ma-cloud.nl/pop.php">
       <label>Name:</label>
-      <input
-        autofocus
-        required
-        type="text"
-        name="naam"
-        placeholder="Bv. Jan Jansen"
-      />
+      <input required type="text" name="naam" placeholder="Bv. Jan Jansen" />
 
       <select name="klas">
         <option value="">selecteer jouw klas</option>
@@ -38,14 +32,6 @@
         <div class="welbevinden">
           <p>Hoe positief ben je op dit moment over je opleiding?</p>
 
-          <label
-            ><input
-              type="radio"
-              name="subject"
-              value="0"
-              checked="checked"
-            />0</label
-          >
           <label><input type="radio" name="positief" value="1" />1</label>
           <label><input type="radio" name="positief" value="2" />2</label>
           <label><input type="radio" name="positief" value="3" />3</label>
@@ -59,14 +45,6 @@
 
           <p>Hoe gemotiveerd ben je momenteel om de opleiding af te maken?</p>
 
-          <label
-            ><input
-              type="radio"
-              name="subject1"
-              value="0"
-              checked="checked"
-            />0</label
-          >
           <label><input type="radio" name="gemotiveerd" value="1" />1</label>
           <label><input type="radio" name="gemotiveerd" value="2" />2</label>
           <label><input type="radio" name="gemotiveerd" value="3" />3</label>
@@ -82,13 +60,12 @@
 
           <label
             ><input
+              autofocus
               type="radio"
-              name="subject2"
-              value="0"
-              checked="checked"
-            />0</label
+              name="vertrouwen"
+              value="1"
+            />1</label
           >
-          <label><input type="radio" name="vertrouwen" value="1" />1</label>
           <label><input type="radio" name="vertrouwen" value="2" />2</label>
           <label><input type="radio" name="vertrouwen" value="3" />3</label>
           <label><input type="radio" name="vertrouwen" value="4" />4</label>
@@ -105,15 +82,24 @@
         <legend>sterke kanten</legend>
         <p>wat zijn jou sterke kanten?</p>
         <label
-          ><input type="checkbox" name="sterk_HTMLCSS" id="HTMLCSS" />Coderen in
-          HTML/CSS</label
-        >
-        <label
-          ><input type="checkbox" name="sterk_Java" id="Java" />Programmeren in
-          Java</label
+          ><input
+            value="sterke kant"
+            type="checkbox"
+            name="sterk_HTMLCSS"
+            id="HTMLCSS"
+          />Coderen in HTML/CSS</label
         >
         <label
           ><input
+            value="sterke kant"
+            type="checkbox"
+            name="sterk_Java"
+            id="Java"
+          />Programmeren in Java</label
+        >
+        <label
+          ><input
+            value="sterke kant"
             type="checkbox"
             name="sterk_javascript"
             id="javascript"
@@ -121,6 +107,7 @@
         >
         <label
           ><input
+            value="sterke kant"
             type="checkbox"
             name="sterk_planning"
             id="planning"
@@ -128,6 +115,7 @@
         >
         <label
           ><input
+            value="sterke kant"
             type="checkbox"
             name="sterk_samenwerken"
             id="samenwerken"
@@ -140,6 +128,7 @@
         <p>Aan welke skills moet je nog extra aandacht besteden?</p>
         <label
           ><input
+            value="zwakke kant"
             type="checkbox"
             name="ontwikkelen_HTMLCSS"
             id="ontwikkelen_HTMLCSS"
@@ -147,6 +136,7 @@
         >
         <label
           ><input
+            value="zwakke kant"
             type="checkbox"
             name="ontwikkelen_Java"
             id="ontwikkelen_Java"
@@ -154,6 +144,7 @@
         >
         <label
           ><input
+            value="zwakke kant"
             type="checkbox"
             name="ontwikkelen_javascript"
             id="ontwikkelen_javascript"
@@ -161,6 +152,7 @@
         >
         <label
           ><input
+            value="zwakke kant"
             type="checkbox"
             name="ontwikkelen_planning"
             id="ontwikkelen_planning"
@@ -168,6 +160,7 @@
         >
         <label
           ><input
+            value="zwakke kant"
             type="checkbox"
             name="ontwikkelen_samenwerken"
             id="ontwikkelen_samenwerken"
@@ -177,9 +170,10 @@
 
       <fieldset>
         <legend>Beste programmertaal</legend>
-        <p>Aan welke skills moet je nog extra aandacht besteden?</p>
+        <p>Welke taal is de beste programmertaal?</p>
         <label
           ><input
+            value="Beste is HTML"
             type="radio"
             name="beste"
             id="beste_HTML"
@@ -189,17 +183,26 @@
         <label><input type="radio" name="beste" id="beste_Java" />Java</label>
         <label
           ><input
+            value="Beste is javascript"
             type="radio"
             name="beste"
-            id="jbeste_avascript"
+            id="beste_javascript"
           />javascript</label
         >
-        <label><input type="radio" name="beste" id="beste_planning" />C#</label>
         <label
           ><input
+            value="Beste is C#"
             type="radio"
             name="beste"
-            id="beste_samenwerken"
+            id="beste_C#"
+          />C#</label
+        >
+        <label
+          ><input
+            value="Beste is python"
+            type="radio"
+            name="beste"
+            id="beste_python"
           />python</label
         >
       </fieldset>
