@@ -1,0 +1,62 @@
+body {
+  background-color: gray;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.items {
+  grid-column: 1/6;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+.HetFruit {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+button {
+  width: 100%;
+  background: green;
+  height: 100px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  color: black;
+  border-radius: 10%;
+}
+
+button:hover {
+  background: #0d9700;
+  box-shadow: black 0.3em 0.3em 0.3em;
+}
+#fruit1,
+#fruit2,
+#fruit3 {
+  font-size: 100px;
+  background-color: darkgray;
+  border-radius: 10%;
+  text-align: center;
+  padding: 10px;
+}
+h2 {
+  text-align: center;
+}
+@media screen and (max-width: 40em) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .HetFruit {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #fruit1,
+  #fruit2,
+  #fruit3 {
+    padding: 0;
+    font-size: 45px;
+    border-radius: 5%;
+  }
+}
