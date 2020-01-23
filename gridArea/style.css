@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "hd hd hd"
+    "tip1 tip2 img"
+    "tip3 tip4 img"
+    "sb tip5 img"
+    "sb tip5 tip6"
+    "sb tip7 tip8"
+    "sb tip9 footer"
+    "sb tip10 footer";
+}
+header {
+  grid-area: hd;
+  background-color: rgba(0, 255, 255, 0.486);
+  text-align: center;
+  padding: 15px;
+}
+.tip1 {
+  grid-area: tip1;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.tip2 {
+  grid-area: tip2;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.tip3 {
+  grid-area: tip3;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.tip4 {
+  grid-area: tip4;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.tip5 {
+  grid-area: tip5;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.tip6 {
+  grid-area: tip6;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.tip7 {
+  grid-area: tip7;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.tip8 {
+  grid-area: tip8;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.tip9 {
+  grid-area: tip9;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+.tip10 {
+  grid-area: tip10;
+  padding: 15px;
+  margin: 5px;
+  text-align: center;
+}
+img {
+  grid-area: img;
+}
+.sidebar {
+  grid-area: sb;
+  background-color: rgba(128, 128, 128, 0.527);
+  text-align: center;
+  padding: 15px;
+}
+footer {
+  grid-area: footer;
+  background-color: aqua;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+@media screen and (max-width: 100em) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "hd hd"
+      "tip1 tip2"
+      "tip1 tip2"
+      "tip3 tip4"
+      "tip3 tip4"
+      "tip6 tip6"
+      "tip5 tip5"
+      "tip7 tip8"
+      "tip7 tip8"
+      "sb tip9"
+      "sb tip9"
+      "sb tip10"
+      "sb tip10"
+      "footer footer";
+  }
+  img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "hd"
+      "tip1"
+      "tip2"
+      "tip3"
+      "tip4"
+      "tip5"
+      "tip6"
+      "tip7"
+      "tip8"
+      "tip9"
+      "tip10"
+      "sb"
+      "footer";
+  }
+  img {
+    display: none;
+  }
+}
