@@ -46,6 +46,6 @@ let vakjes = [
   afb_0
 ];
 
-for (i = 0; i < plaatjes.length; i++) {
+for (let i = 0; i < plaatjes.length; i++) {
   vakjes[i].src = "plaatjes/" + plaatjes[i];
 }

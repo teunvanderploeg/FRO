@@ -4,21 +4,21 @@ let fruit3 = document.getElementById("fruit3");
 let punt = document.getElementById("punt");
 let probeerd = document.getElementById("probeerd");
 
-var punten = 0;
-var aantalkeergespeeld = 0;
+let punten = 0;
+let aantalkeergespeeld = 0;
 
 let fruit = ["&#127822", "&#127820", "&#127827", "&#127817"];
 
 random_fruit();
 
 function random_fruit() {
-  var random1 = fruit[Math.floor(Math.random() * fruit.length)];
+  let random1 = fruit[Math.floor(Math.random() * fruit.length)];
   fruit1.innerHTML = random1;
 
-  var random2 = fruit[Math.floor(Math.random() * fruit.length)];
+  let random2 = fruit[Math.floor(Math.random() * fruit.length)];
   fruit2.innerHTML = random2;
 
-  var random3 = fruit[Math.floor(Math.random() * fruit.length)];
+  let random3 = fruit[Math.floor(Math.random() * fruit.length)];
   fruit3.innerHTML = random3;
 
   aantalkeergespeeld++;

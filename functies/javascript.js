@@ -27,7 +27,7 @@ meerderePastas(0, 18);
 function showPasta(num) {
   text.innerHTML += pasta[num] + "<br>" + "<br>";
 
-  for (i = 0; i < pasta.length; i++) {
+  for (let i = 0; i < pasta.length; i++) {
     text.innerHTML += pasta[i] + "<br>";
   }
 }
@@ -42,7 +42,7 @@ function eenPasta(nummer) {
 function meerderePastas(begen, tot) {
   text.innerHTML += "<br>";
 
-  for (i = begen; i < tot; i++) {
+  for (let i = begen; i < tot; i++) {
     text.innerHTML += pasta[i] + "<br>";
   }
 }
