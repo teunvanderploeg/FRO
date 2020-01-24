@@ -1,4 +1,4 @@
-var resept = document.getElementById("eten");
+let resept = document.getElementById("eten");
 
 let eten = [
   " Spaghetti met ham en kaas ",
