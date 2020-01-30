@@ -17,86 +17,124 @@ body {
 }
 header {
   grid-area: hd;
-  background-color: rgba(0, 255, 255, 0.486);
+  background-color: gold;
   text-align: center;
   padding: 15px;
+  border-bottom: solid;
 }
 .tip1 {
   grid-area: tip1;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
 }
 .tip2 {
   grid-area: tip2;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
 }
 .tip3 {
   grid-area: tip3;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
 }
 .tip4 {
   grid-area: tip4;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
 }
 .tip5 {
   grid-area: tip5;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
 }
 .tip6 {
   grid-area: tip6;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
 }
 .tip7 {
   grid-area: tip7;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
 }
 .tip8 {
   grid-area: tip8;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
 }
 .tip9 {
   grid-area: tip9;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
 }
 .tip10 {
   grid-area: tip10;
   padding: 15px;
   margin: 5px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 80%;
+}
+.numer {
+  background-color: gold;
+  margin-right: 5px;
+  border-style: solid;
 }
 img {
   grid-area: img;
 }
 .sidebar {
   grid-area: sb;
-  background-color: rgba(128, 128, 128, 0.527);
+  background-color: gold;
   text-align: center;
   padding: 15px;
+  border-top: solid;
+  border-right: solid;
+  border-bottom: solid;
+}
+#validatie {
+  padding-top: 200px;
+}
+h4 {
+  padding: 10px;
+  font-size: 25px;
+}
+.sidebar a {
+  font-size: 20px;
+  text-decoration: none;
+  color: blue;
+}
+.sidebar a:hover {
+  color: red;
 }
 footer {
   grid-area: footer;
-  background-color: aqua;
+  background-color: gold;
   text-align: center;
   width: 100%;
   height: 100%;
   padding: 15px;
+  border: black;
+  border-style: none;
+  border-top: solid;
+  border-left: solid;
 }
 @media screen and (max-width: 100em) {
   body {
@@ -120,6 +158,16 @@ footer {
   img {
     display: none;
   }
+  footer {
+    border-style: none;
+    border-top: solid;
+  }
+  #validatie {
+    padding-top: 2px;
+  }
+  .sidebar {
+    border-bottom: none;
+  }
 }
 
 @media screen and (max-width: 40em) {
@@ -142,5 +190,9 @@ footer {
   }
   img {
     display: none;
+  }
+  .sidebar {
+    border-bottom: none;
+    border-right: none;
   }
 }
