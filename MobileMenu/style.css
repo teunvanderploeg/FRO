@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* dan komt er geen horizontale scrol balk */
+  overflow-x: hidden;
+  width: 100vw;
+}
+.contaner img {
+  max-width: 100vw;
+}
+
+#menuscwitcher ~ nav {
+  left: 90vw;
+}
