@@ -33,6 +33,7 @@ main img {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  cursor: pointer;
 }
 .blijvend img,
 .blijvend p {
@@ -46,10 +47,70 @@ main img {
   text-align: center;
   text-shadow: 0 2px 5px black;
 }
+/* modaal opmaken */
+.modaal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.modaalInhoud {
+  background-color: white;
+  max-width: 70vh;
+  padding: 2em;
+  max-height: 80vh;
+  overflow: auto;
+  margin-top: 90vh;
+  animation-name: schuif-binnen;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.sluit-knop {
+  float: right;
+  font-size: 1.5em;
+  padding: 5px;
+}
+.sluit-knop:hover {
+  color: red;
+  cursor: pointer;
+}
+
 .validatie img {
   height: 1em;
   width: auto;
   border: 0;
   margin: 0 0.3em;
   cursor: pointer;
+}
+
+@keyframes schuif-binnen {
+  0% {
+    margin-top: 150vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@-moz-keyframes schuif-binnen {
+  0% {
+    margin-top: -90vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+@-webkit-keyframes schuif-binnen {
+  0% {
+    margin-top: -90vh;
+  }
+  100% {
+    margin-top: 0;
+  }
 }
