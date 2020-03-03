@@ -10,7 +10,12 @@ body {
 .contaner img {
   max-width: 100vw;
 }
-
-#menuscwitcher ~ nav {
-  left: 90vw;
+input {
+  display: none;
+}
+label {
+  font-size: 2em;
+}
+label:hover {
+  cursor: pointer;
 }
