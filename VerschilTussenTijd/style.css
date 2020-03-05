@@ -1,0 +1,12 @@
+body {
+  text-align: center;
+}
+h1 {
+  height: 3em;
+  padding-top: 3em;
+}
+button {
+  text-align: center;
+  font-size: 3em;
+  width: 3em;
+}
