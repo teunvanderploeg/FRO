@@ -7,37 +7,38 @@
     <meta name="keywords" content="switch" />
     <meta name="author" content="Teun van der Ploeg" />
     <link rel="stylesheet" type="text/css" href="css/switch.css" />
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/ripple.css" />
+    <title>switch & ripple</title>
   </head>
   <body>
     <div class="contaner">
       <h1>Dit is een switch</h1>
-
-      <label>
+      <div class="vlak" style="border: 2px solid black;">Ripple</div>
+      <label class="vlak">
         <span>Hou je van kaas</span>
-        <input type="checkbox" class="switch disabled" disabled="true" />
+        <input type="checkbox" class="switch" />
       </label>
-      <label>
+      <label class="vlak">
         <span>Hou je van kip</span>
         <input type="checkbox" class="switch groot" />
       </label>
-      <label>
+      <label class="vlak">
         <span>Hou je van pannekoeken</span>
         <input type="checkbox" class="switch" />
       </label>
-      <label>
+      <label class="vlak">
         <span>Hou je van friet</span>
         <input type="checkbox" class="switch groot" />
       </label>
-      <label>
+      <label class="vlak">
         <span>Hou je van eend</span>
         <input type="checkbox" class="switch" />
       </label>
-      <label>
+      <label class="vlak">
         <span>Hou je van schaap</span>
         <input type="checkbox" class="switch groot" />
       </label>
-      <label>
+      <label class="vlak">
         <span>Hou je van ijs</span>
         <input type="checkbox" class="switch" />
       </label>
@@ -59,5 +60,6 @@
         />
       </a>
     </footer>
+    <script src="ripple.js"></script>
   </body>
 </html>
