@@ -48,21 +48,8 @@ const AltsVanFotos = [
 
 const container = document.getElementById("container");
 
-function PlaatsDeFoto(url, alt) {
-  let item = document.createElement("div");
-  item.className = "item";
-  let plaatje = document.createElement("img");
-  plaatje.src = url; //geeft een url of het pat naar de foto aan
-  plaatje.alt = alt; //geeft de alt van de foto
-  plaatje.className = "plaatje";
-  item.append(plaatje);
-  container.append(item);
-}
+let backgroundcolor = "green";
 
-for (let i = PlaatsVanFotos.length; i > 0; i--) {
-  let randomgetal = Math.floor(Math.random() * PlaatsVanFotos.length);
+localStorage.setItem("backgroundColor", backgroundcolor);
 
-  PlaatsDeFoto(PlaatsVanFotos[randomgetal], AltsVanFotos[randomgetal]);
-  PlaatsVanFotos.splice(randomgetal, 1);
-  AltsVanFotos.splice(randomgetal, 1);
-}
+let achtergrondkleur = localStorage.getItem("backgroundColor");
