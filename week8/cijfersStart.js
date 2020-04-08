@@ -7,14 +7,15 @@ function Opdracht(vak, beschrijving) {
 
 // OPDRACHT 1.
 function Cijfer(vak, cijfer) {
-  if (cijfer > 0 && cijfer < 10) {
+  if (cijfer >= 0 && cijfer <= 10) {
     let opdrObj = this;
 
-    opdrObj.vak = vak;
     opdrObj.cijfer = cijfer;
+    opdrObj.vak = vak;
   } else {
     console.log(cijfer);
     console.log("is niet tussen de 0 en de 10");
+    opdrObj.cijfer = 0;
   }
 }
 
@@ -32,32 +33,47 @@ function Cijfer(vak, cijfer) {
 let opdracht1 = new Opdracht("bap", "Back and programing");
 let opdracht2 = new Opdracht("proj", "Project");
 let opdracht3 = new Opdracht("ned", "Nederlands");
+let opdracht4 = new Opdracht("fro", "Front and programing");
+let opdracht5 = new Opdracht("slb", "SLB");
+let opdracht6 = new Opdracht("k-id", "K-ID");
+let opdracht7 = new Opdracht("eng", "Engels");
+let opdracht8 = new Opdracht("rek", "Rekenen");
+let opdracht9 = new Opdracht("bur", "Burger schap");
 
 let cijfer1 = new Cijfer("bap", 8);
 let cijfer2 = new Cijfer("proj", 7);
 let cijfer3 = new Cijfer("ned", 6);
-
-console.log(cijfer1);
-console.log(cijfer2);
-console.log(cijfer3);
-
-console.log(opdracht1);
-console.log(opdracht2);
-console.log(opdracht3);
-
+let cijfer4 = new Cijfer("fro", 7);
+let cijfer5 = new Cijfer("slb", 8);
+let cijfer6 = new Cijfer("k-id", 8);
+let cijfer7 = new Cijfer("eng", 7);
+let cijfer8 = new Cijfer("rek", 6);
+let cijfer9 = new Cijfer("bur", 7);
 // OPDRACHT 3.
 // Vul de arrays met de opdrachten en cijfers die je hebt aangemaakt.
 // Kijk in week6 voor een voorbeeld hoe je objecten in een array stopt!
+
 let opdrachten = [];
 let cijfers = [];
 
 opdrachten.push(opdracht1);
 opdrachten.push(opdracht2);
 opdrachten.push(opdracht3);
-
+opdrachten.push(opdracht4);
+opdrachten.push(opdracht5);
+opdrachten.push(opdracht6);
+opdrachten.push(opdracht7);
+opdrachten.push(opdracht8);
+opdrachten.push(opdracht9);
 cijfers.push(cijfer1);
 cijfers.push(cijfer2);
 cijfers.push(cijfer3);
+cijfers.push(cijfer4);
+cijfers.push(cijfer5);
+cijfers.push(cijfer6);
+cijfers.push(cijfer7);
+cijfers.push(cijfer8);
+cijfers.push(cijfer9);
 
 function Periode(opdrachten, cijfers) {
   let periodeObj = this;
@@ -67,9 +83,24 @@ function Periode(opdrachten, cijfers) {
 }
 
 let periode = new Periode(opdrachten, cijfers);
+console.log(periode);
 
 // OPDRACHT 4.
 // Maak een periode variabele op basis van de bovenstaande functie
+
+function createJSON() {
+  let id = document.getElementById("json");
+  let applicationData =
+    "application/json;charset=utf-8," +
+    encodeURIComponent(JSON.stringify(periode));
+
+  let json = document.createElement("a");
+  json.href = "data:" + applicationData;
+  json.download = "json.json";
+  json.innerHTML = "Ready to download your json file";
+
+  id.appendChild(json);
+}
 
 // OPDRACHT 5.
 // Schrijf de periode variabele naar een JSON variabele
