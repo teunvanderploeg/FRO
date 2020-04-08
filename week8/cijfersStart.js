@@ -40,15 +40,15 @@ let opdracht7 = new Opdracht("eng", "Engels");
 let opdracht8 = new Opdracht("rek", "Rekenen");
 let opdracht9 = new Opdracht("bur", "Burger schap");
 
-let cijfer1 = new Cijfer("bap", 8);
-let cijfer2 = new Cijfer("proj", 7);
-let cijfer3 = new Cijfer("ned", 6);
-let cijfer4 = new Cijfer("fro", 7);
-let cijfer5 = new Cijfer("slb", 8);
-let cijfer6 = new Cijfer("k-id", 8);
-let cijfer7 = new Cijfer("eng", 7);
-let cijfer8 = new Cijfer("rek", 6);
-let cijfer9 = new Cijfer("bur", 7);
+let cijfer1 = new Cijfer(opdracht1, 8);
+let cijfer2 = new Cijfer(opdracht2, 7);
+let cijfer3 = new Cijfer(opdracht3, 6);
+let cijfer4 = new Cijfer(opdracht4, 7);
+let cijfer5 = new Cijfer(opdracht5, 8);
+let cijfer6 = new Cijfer(opdracht6, 8);
+let cijfer7 = new Cijfer(opdracht7, 7);
+let cijfer8 = new Cijfer(opdracht8, 6);
+let cijfer9 = new Cijfer(opdracht9, 7);
 // OPDRACHT 3.
 // Vul de arrays met de opdrachten en cijfers die je hebt aangemaakt.
 // Kijk in week6 voor een voorbeeld hoe je objecten in een array stopt!
@@ -101,7 +101,7 @@ function createJSON() {
 
   id.appendChild(json);
 }
-
+// createJSON();
 // OPDRACHT 5.
 // Schrijf de periode variabele naar een JSON variabele
 // Kijk in week7 hoe je een JSON variabele aanmaakt
