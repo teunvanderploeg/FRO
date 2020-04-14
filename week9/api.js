@@ -17,27 +17,21 @@ function users(items) {
     item = new Name(items[count].name);
     coordinates = new Coordinates(items[count].location.coordinates);
     address = new Address(items[count].location);
-    // email = new id(item[count].email);
-    // street = new id(item[count].street);
+    id = new Id(items[count].id);
+    email = new Email(item[count].email);
+    street = new Street(item[count].location.street);
   }
+
   console.table(item);
   console.table(coordinates);
   console.table(address.showStreet());
-
   // TODO:    Zorg ervoor dat de volgende statements resultaat gaan opleveren
   //          Hiervoor moet je de functie showAddress() afmaken en de constructors voor de
   //          objecten id, email, street en adrress aanmaken.
-
   console.log(address.showAddress());
   console.table(id);
   console.table(email);
   console.table(street);
-
-  // nameObj = this;
-  // nameObj.id = id;
-  // nameObj.email = email;
-  // nameObj.street = street;
-  // nameObj.adrress = address;
 }
 
 function createGetRequest(url, callBack) {
