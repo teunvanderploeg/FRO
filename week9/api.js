@@ -5,15 +5,20 @@
 //          bekend zijn.
 
 let results = [];
-let item = [];
-let coordinates = [];
-let address = [];
+let item = {};
+let coordinates = {};
+let address = {};
+let id = {};
+let email = {};
+let street = {};
 
 function users(items) {
   for (let count = 0; count < items.length; count++) {
     item = new Name(items[count].name);
     coordinates = new Coordinates(items[count].location.coordinates);
     address = new Address(items[count].location);
+    // email = new id(item[count].email);
+    // street = new id(item[count].street);
   }
   console.table(item);
   console.table(coordinates);
@@ -23,13 +28,10 @@ function users(items) {
   //          Hiervoor moet je de functie showAddress() afmaken en de constructors voor de
   //          objecten id, email, street en adrress aanmaken.
 
-  function showAddress() {
-    console.log(address.showAddress());
-    console.table(id.showId());
-    console.table(email);
-    console.table(street);
-    console.table(address);
-  }
+  console.log(address.showAddress());
+  console.table(id);
+  console.table(email);
+  console.table(street);
 
   // nameObj = this;
   // nameObj.id = id;
