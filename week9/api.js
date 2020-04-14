@@ -23,11 +23,19 @@ function users(items) {
   //          Hiervoor moet je de functie showAddress() afmaken en de constructors voor de
   //          objecten id, email, street en adrress aanmaken.
 
-  console.log(address.showAddress());
-  console.table(id);
-  console.table(email);
-  console.table(street);
-  console.table(address);
+  function showAddress() {
+    console.log(address.showAddress());
+    console.table(id.showId());
+    console.table(email);
+    console.table(street);
+    console.table(address);
+  }
+
+  // nameObj = this;
+  // nameObj.id = id;
+  // nameObj.email = email;
+  // nameObj.street = street;
+  // nameObj.adrress = address;
 }
 
 function createGetRequest(url, callBack) {
