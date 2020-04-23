@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  grid-gap: 1em;
+  display: grid;
+}
+ul ul {
+  -webkit-grid-template-columns: 1fr 1fr;
+  -moz-grid-template-columns: 1fr 1fr;
+  -ms-grid-template-columns: 1fr 1fr;
+  -o-grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  display: grid;
+}
+
+li, p {
+  color: #34ff34;
+  background-color: #001a00;
+  padding: 1em;
+  margin: 10px;
+  text-align: center;
+}
+li:hover, p:hover {
+  background-color: green;
+}
+
+@media screen and (min-width: 30em) {
+  ul {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    display: grid;
+  }
+}
+ul {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  display: grid;
+}
+
+/* body */
+body {
+  font-family: sans-serif;
+  background-color: black;
+  color: green;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

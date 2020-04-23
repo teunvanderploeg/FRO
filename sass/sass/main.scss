@@ -1,0 +1,13 @@
+// importeer variabelen
+@import "var";
+@import "reset";
+@import "lijst";
+@import "mixins";
+@import "naviTablet";
+/* body */
+body {
+  font-family: sans-serif;
+  background-color: black;
+  color: $maincolor;
+  text-align: $midden;
+}

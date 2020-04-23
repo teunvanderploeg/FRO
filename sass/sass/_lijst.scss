@@ -1,0 +1,33 @@
+@mixin grids($waarde) {
+  ul {
+    -webkit-grid-template-columns: $waarde;
+    -moz-grid-template-columns: $waarde;
+    -ms-grid-template-columns: $waarde;
+    -o-grid-template-columns: $waarde;
+    grid-template-columns: $waarde;
+    grid-gap: 1em;
+    display: grid;
+  }
+}
+ul {
+  @include grids(1fr 1fr);
+  grid-gap: 1em;
+
+  display: grid;
+}
+li {
+  color: $lichter;
+  background-color: $donkerder;
+  padding: $padding;
+  margin: 10px;
+  text-align: center;
+  &:hover {
+    background-color: $maincolor;
+  }
+}
+p {
+  @extend li;
+}
+@media screen and (min-width: 30em) {
+  @import "naviTablet";
+}
