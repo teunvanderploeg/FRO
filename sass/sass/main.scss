@@ -12,3 +12,5 @@ body {
   color: $maincolor;
   text-align: $midden;
 }
+
+@include grids(1fr 1fr);
