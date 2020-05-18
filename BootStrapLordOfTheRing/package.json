@@ -1,0 +1,27 @@
+{
+  "name": "lotr",
+  "version": "1.0.0",
+  "description": "training bootstrap fro 1.4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teunvanderploeg/FRO.git"
+  },
+  "keywords": [
+    "school"
+  ],
+  "author": "Teun van der Ploeg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teunvanderploeg/FRO/issues"
+  },
+  "homepage": "https://github.com/teunvanderploeg/FRO#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}
