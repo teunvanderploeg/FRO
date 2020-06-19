@@ -8,8 +8,16 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<nav>
-<?php wp_nav_menu( array(
-    'theme_location' => 'hoofd-menu') ); ?>
-</nav>
-<h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+<header>
+    <nav>
+    <?php wp_nav_menu( 
+        array(
+            'theme_location' => 'hoofd-menu'
+            ) 
+        ); ?>
+    </nav>
+<div class="jumbotron">
+    <h1 class="display-4"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+    <p class="lead"><?php bloginfo('description'); ?></p>
+</div>
+</header>
