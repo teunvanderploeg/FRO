@@ -17,7 +17,7 @@
         
         
         <aside class="col-md-4 bg-light">
-            <h3>terzijden</h3>
+            <?php dynamic_sidebar('aside') ?>
         </aside>
     </div>
 </div>
