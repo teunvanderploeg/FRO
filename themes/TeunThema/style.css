@@ -19,7 +19,20 @@ body {
   background-color: rgb(231, 231, 231);
   color: black;
 }
-
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 0 3px 3px black;
+}
+.jumbotron a {
+  color: white;
+  text-decoration: none;
+}
+.jumbotron a:hover {
+  color: rgb(187, 187, 187);
+  text-decoration: underline;
+}
 .validatie {
   height: 1em;
   width: auto;
