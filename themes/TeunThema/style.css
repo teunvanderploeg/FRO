@@ -18,6 +18,9 @@ body {
   font-family: sans-serif;
   background-color: rgb(231, 231, 231);
   color: black;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 .jumbotron {
   background-size: cover;
