@@ -36,6 +36,15 @@ body {
   color: rgb(187, 187, 187);
   text-decoration: underline;
 }
+/* google font */
+.jumbotron,
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+  font-family: "Roboto";
+}
 .validatie img {
   height: 2em;
   width: auto;
